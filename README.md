@@ -45,6 +45,13 @@ This file contains a number of front-end interview questions that can be used wh
 * Explain what ARIA and screenreaders are, and how to make a website accessible.
 * Explain some of the pros and cons for CSS animations versus JavaScript animations.
 * What does CORS stand for and what issue does it address?
+* Explain the purpose of each of the HTTP request types when used with a RESTful web service.
+* What is Long Polling, how does it work, and why would you use it? 
+  * What client and server side resources?
+  * What is the main drawback?
+  * Which HTML5 feature is the best alternative to long polling?
+* Explain the difference between stateless and stateful protocols. Which type of protocol is HTTP?
+* What is a "MIME type", what does it consist of, and what is it used for?
 
 #### HTML Questions:
 
@@ -148,8 +155,16 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
   * What are the pros and cons of immutability?
   * How can you achieve immutability in your own code?
 * Explain the difference between synchronous and asynchronous functions.
-* What is event loop?
+* What is the event loop?
   * What is the difference between call stack and task queue?
+* Consider the following script. How many concurrent HTTP requests would you expect to be created by this loop?
+```javascript
+function startAjaxQueue(){
+  for (var i = 0; i < 50; i++){
+  	executeAjaxCallAsync();
+  }
+};
+```
 
 #### Testing Questions:
 
